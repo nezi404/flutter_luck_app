@@ -41,9 +41,9 @@ class _MainAppState extends State<MainApp> {
           centerTitle: true,
           toolbarHeight: 100,
           title: const Text(
-            'Número da Sorte 🎲',
+            'Número da Sorte 🍀',
             style: TextStyle(
-              color: Colors.white,
+              color: Color.fromARGB(255, 255, 255, 255),
               fontSize: 30,
               fontWeight: FontWeight.bold,
             ),
@@ -52,6 +52,7 @@ class _MainAppState extends State<MainApp> {
         ),
         body: Center(
           child: Container(
+            color: const Color.fromARGB(255, 192, 192, 192),
             padding: EdgeInsets.symmetric(horizontal: 30, vertical: 50),
             // margin: EdgeInsets.fromLTRB(20, 30, 50, 100),
             // color: Colors.amber,
@@ -103,7 +104,7 @@ class _MainAppState extends State<MainApp> {
                 Text(
                   _alert,
                   style: TextStyle(
-                    color: Color(0xff8716d5),
+                    color: Color.fromARGB(255, 213, 22, 22),
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
@@ -114,8 +115,8 @@ class _MainAppState extends State<MainApp> {
                   child: ElevatedButton(
                     onPressed: _generateRandom,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Color(0xff8716d5),
-                      foregroundColor: Colors.white,
+                      backgroundColor: Color.fromARGB(255, 216, 24, 24),
+                      foregroundColor: const Color.fromARGB(255, 255, 255, 255),
                       padding: EdgeInsets.symmetric(
                         horizontal: 60,
                         vertical: 20,
@@ -125,7 +126,7 @@ class _MainAppState extends State<MainApp> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    child: Text('SORTE!'),
+                    child: Text('SORTEAR!'),
                   ),
                 ),
                 Text(
@@ -133,7 +134,7 @@ class _MainAppState extends State<MainApp> {
                       ? ''
                       : 'Números já sorteados: \n${_randomNumberList.toString()}',
                   style: TextStyle(
-                    color: Color(0xff8716d5),
+                    color: Color.fromARGB(255, 216, 24, 24),
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
@@ -151,7 +152,7 @@ class _MainAppState extends State<MainApp> {
             });
           },
           backgroundColor: Colors.black87,
-          child: const Icon(Icons.refresh, color: Colors.white),
+          child: const Icon(Icons.refresh, color: Color.fromARGB(255, 255, 255, 255)),
         ),
       ),
     );
